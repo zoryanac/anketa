@@ -1,0 +1,47 @@
+<div class="ui top attached menu">
+  <%= link_to application_forms_path, class: 'ui icon item' do %>
+    <i class="chevron left icon"></i>
+  <% end %>
+  <div class="header item">
+    Application Form
+  </div>
+  <%= link_to edit_application_form_path(@application_form), class: 'ui icon item' do %>
+    <i class="write icon"></i>
+    &nbsp;
+    Edit
+  <% end %>
+</div>
+<div class="ui card">
+  <div class="content">
+    <div class="header"><%= @application_form.first_name %> <%= @application_form.last_name %></div>
+    <div class="meta">
+        <%= @application_form.email %>
+    </div>
+    <div class="description">
+      <p>
+        <strong>Age:</strong>
+        <%= @application_form.age %>
+      </p>
+
+      <p>
+        <strong>Interests:</strong>
+        <%= @application_form.interests %>
+      </p>
+
+      <p>
+        <strong>English level:</strong>
+        <%= @application_form.english_level %>
+      </p>
+
+      <p>
+        <strong>Experience:</strong>
+        <%= @application_form.experience %>
+      </p>
+
+      <p>
+        <strong>Motivation:</strong>
+        <%= @application_form.motivation %>
+      </p>
+    </div>
+  </div>
+</div>

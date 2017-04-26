@@ -1,0 +1,11 @@
+<div class="ui top attached menu">
+  <%= link_to application_forms_path, class: 'ui icon item' do %>
+    <i class="chevron left icon"></i>
+  <% end %>
+  <div class="header item">
+    Editing Application Form
+  </div>
+    <%= link_to 'Show', @application_form, class: 'ui icon item' %>
+</div>
+<br>
+<%= render 'form', application_form: @application_form %>
